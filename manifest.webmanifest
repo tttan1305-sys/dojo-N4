@@ -1,0 +1,30 @@
+{
+  "name": "Dojo Tiếng Nhật N4",
+  "short_name": "Dojo N4",
+  "description": "Học từ vựng và ngữ pháp tiếng Nhật N5 lên N4",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E8EEF7",
+  "theme_color": "#1F4FD6",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
