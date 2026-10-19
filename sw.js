@@ -1,5 +1,5 @@
-// Dojo N4 offline cache, version a87a6f9855
-const CACHE='dojo-a87a6f9855';
+// Dojo N4 offline cache, version 1aab7c7cfd
+const CACHE='dojo-1aab7c7cfd';
 const CORE=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','icon-maskable-512.png','apple-touch-icon.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE&&k!=='dojo-fonts'&&k.startsWith('dojo-')).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
